@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*"
+		"laravel/framework": "5.0.*",
+                "laravel/socialite": "~2.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
@@ -13,7 +14,12 @@
 	},
 	"autoload": {
 		"classmap": [
-			"database"
+			"database",
+			"app/models/Entities",
+			"app/models/Repositories",
+			"app/models/Repositories/User",
+			"app/models/Services",
+			"app/models/Services/User"
 		],
 		"psr-4": {
 			"drunkyard\\": "app/"

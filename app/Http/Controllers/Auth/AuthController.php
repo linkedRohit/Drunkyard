@@ -20,7 +20,7 @@ class AuthController extends Controller {
 
 	use AuthenticatesAndRegistersUsers;
 
-	/**
+	/*
 	 * Create a new authentication controller instance.
 	 *
 	 * @param  \Illuminate\Contracts\Auth\Guard  $auth
@@ -35,4 +35,16 @@ class AuthController extends Controller {
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
 
+	/**
+     * Handle an authentication attempt.
+     *
+     * @return Response
+     */ 
+    public function authenticate()
+    {
+        if (Auth::attempt(['id' => $id, 'password' => $password]))
+        {
+            return redirect()->intended('dashboard');
+        }
+    }
 }
