@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<header class="intro">
+<header class="intro-loggedin">
         <div class="intro-body">
             <div class="container">
                 <div class="row">

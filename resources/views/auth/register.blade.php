@@ -8,7 +8,7 @@
                     <div class="col-md-6 col-xs-0">                        
                         <ul class="bulletPoints mt300 txtShadow1">
                             <li>
-                                Welcome to the community of passionate people.
+                                Welcome to the community of party animals.
                             </li>
                             <li>
                                 Share crazy stories from last night hangover.
@@ -50,6 +50,7 @@
                             <input type="password" class="form-Control formInput" placeholder="How can we identify?" required="true" name="password">
                             <input type="password" class="form-control formInput" placeholder="Please confirm" required="true" name="password_confirmation">
                             <input type="submit" value="Sign me up!" class="formButton">
+                            <p style="text-align:center">Already have an account ?<a class="btn btn-link" href="/auth/login">Sign in</a>    </p>
                         </form>
                     </div>
                 </div>

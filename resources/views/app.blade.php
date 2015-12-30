@@ -38,11 +38,8 @@
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
                 <a class="navbar-brand page-scroll txtShadow" href="/">
-                    <i class="fa fa-beer"></i><span class="light"> Crazy</span> Itenaries
+                    <i class="fa fa-beer"></i>Drunk<span class="light">yard</span>
                 </a>
             </div>
 
@@ -52,12 +49,6 @@
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
-                    </li>
-        		    <li>
-        			    <a href="register" id="signUpId" class="btn btn-primary btn-lg radius pd12ud mr10"><span class="light network-name">Sign Up</span></a>
-                    </li>
-        		    <li>
-        			    <a href="login" id="logInId" class="btn btn-lg radius pd12ud"><span class="network-name">Sign in</span></a>
                     </li>
                 </ul>
             </div>

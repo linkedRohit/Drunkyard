@@ -7,9 +7,8 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #000;
 }
 
 html {
@@ -23,25 +22,23 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 0 20px;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 p {
-    margin: 0 0 25px;
     font-size: 18px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a {
-    color: #337ab7;
+    color: #fff;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a:hover,
@@ -57,9 +54,8 @@ a:focus {
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #3B5998;
 }
 
 .navbar-custom .navbar-brand {
@@ -93,8 +89,8 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
-    background-color: transparent;
+    color: #fff;
+    background-color: #7C46E6;
 }
 
 .navbar-custom .nav li a:focus,
@@ -138,10 +134,20 @@ a:focus {
     width: 100%;
     height: auto;
     padding: 100px 0;
-    text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-big.jpg) no-repeat bottom center scroll;
     background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.intro-loggedin{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -155,11 +161,11 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
-    text-shadow: #000 5px 5px 15px;
+    text-shadow: #000 5px 5px 15p0 2px 2px rgba(0,0,0,0.3);x;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 16px;
     font-family: Arial;
 }
 
@@ -174,7 +180,7 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .intro-text-sm {
@@ -221,7 +227,12 @@ a:focus {
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
 }
-
+.btn-site{
+    border-color: #fff;
+    font-size: 17px;
+    margin-left: 35px;
+    border-radius: 3px;
+}
 @-webkit-keyframes pulse {    
     0% {
         -webkit-transform: scale(1);
@@ -293,8 +304,8 @@ a:focus {
 }
 
 .btn {
-    border-radius: 0;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-radius: 2;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -309,10 +320,10 @@ a:focus {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #337ab7;
+    border: 1px solid #31708F;
     outline: 0;
     color: #000;
-    background-color: #337ab7;
+    background-color: #31708F;
 }
 
 ul.banner-social-buttons {
@@ -390,21 +401,24 @@ body {
     border-radius:3px;
 }
 .pd12ud{
-    padding: 10px !important;
+    padding: 12px !important;
+}
+
+.pd25lr{
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .txtShadow{
-    text-shadow: #000 10px 10px 10px;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.3);
 }
 .txtShadow1{
-    text-shadow: #000 5px 5px 15px;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 ul.li{
     padding-left:15px;
 }
 .formHeading{
-    margin: -25px -25px 25px;
     font-size: 26px;
-    font-weight: 300;
     color: #aaa;
     text-shadow: 0 1px rgba(255, 255, 255, 0.75);
 }
@@ -430,15 +444,14 @@ ul.li{
 .sign-up{
     position: relative;
     margin: 50px auto;
-    margin-top:100px;
     width: 90%;
-    padding: 33px 25px 29px;
+    padding: 20px 20px 0px;
     background: white;
     border-bottom: 1px solid #c4c4c4;
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .sign-in{
@@ -508,7 +521,7 @@ ul.li{
 }
 .bulletPoints{
     background-color:rgba(0,0,0,.5);
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 19px;
     font-weight: 800;
     list-style: none;
@@ -527,7 +540,7 @@ ul.li{
     margin-left: 40%;
     background-color: rgb(125, 195, 125);
     color: #F0F0F0;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     width:300px;
     position: absolute;
@@ -536,4 +549,44 @@ ul.li{
     -webkit-box-shadow: 6px 7px 15px -2px rgb(81, 119, 82, 1);
     -moz-box-shadow: 6px 7px 15px -2px rgb(81, 119, 82, 1);
     box-shadow: 6px 7px 15px -2px rgb(81, 119, 82, 1);
+}
+
+.ml45per{
+    margin-left: 45%;
+}
+.pt100{
+    padding-top: 100%;
+}
+.rowHeight200{
+    height:200px;
+}
+.text-heading{
+    font-size:30px !important;
+}
+.navbar-loggedIn{
+    padding: 0;
+    background-color: #7C46E6;
+}
+.pd0{
+    padding-left:0px;
+    padding-right:0px;
+}
+.greyText{
+    color: #555;
+}
+.mt-20{
+    margin-top: -20px;
+}
+.menuTxt{
+    font-weight: 200;
+    font-size: 16px;
+}
+.menuHeadTxt{
+    font-size: 23px;
+}
+.menuListItem{
+    padding: 5% 2%;
+}
+.menuListItem:hover{
+    background-color: #7C46E6
 }

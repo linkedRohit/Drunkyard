@@ -41,7 +41,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll txtShadow" href="#page-top">
-                    <i class="fa fa-beer"></i><span class="light"> Crazy</span> Itenaries
+                    <i class="fa fa-beer"></i>Drunk<span class="light">yard</span>
                 </a>
             </div>
 
@@ -53,10 +53,7 @@
                         <a href="#page-top"></a>
                     </li>
         		    <li>
-        			    <a href="/auth/register" id="signUpId" class="btn btn-primary btn-lg radius pd12ud mr10"><span class="light network-name">Sign Up</span></a>
-                    </li>
-        		    <li>
-        			    <a href="/auth/login" id="logInId" class="btn btn-lg radius pd12ud"><span class="network-name">Sign in</span></a>
+        			    <a href="/auth/login" id="logInId" class="btn btn-lg btn-site radius pd12ud"><span class="network-name pd25lr">Sign in</span></a>
                     </li>
                 </ul>
             </div>
@@ -70,14 +67,11 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading mt300">Crazy Stories</h1>
-                        
-			<!--<a href="#stories" class="btn btn-primary btn-lg page-scroll animated radius txtShadow1"> Start Exploring Now </a>-->
-                        <b><p class="intro-text text text-default txtShadow">Get on board for some crazy stories inspired from people like you.</p></b>
-                        <a href="#stories" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                    <div class="col-md-6 col-md-offset-6">                        
+                        <p class="text-heading txtShadow">All party plans, at one place</p>
+                        <p class="intro-text text text-default txtShadow">Experience itinerary for every party. Sign up for DrunkYard today.</p>
+                        <a href="/auth/register" id="signUpId" class="btn btn-success btn-lg radius pd12ud mr10"><span class="light network-name pd25lr">Sign Up — It's Free</span></a>
+                        <a href="/video" id="signUpId" class="btn btn-site btn-lg radius pd12ud "><span class="light network-name pd25lr">Watch Trailer</span></a>
                     </div>
                 </div>
             </div>
@@ -85,7 +79,7 @@
     </header>
 
 	
-	<div class="">
+	<div class="mt-20">
   <br>
   <div id="stories" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -99,7 +93,7 @@
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="img/intro-bg.jpg" alt="Plan" width="100%" height="100%">
+        <img src="img/intro-big.jpg" alt="Plan" width="100%" height="100%">
         <div class="carousel-caption">
           <h1 class="txtShadow1">Plan</h1>
           <p>Break the monotony, Plan weekends.</p>
@@ -107,7 +101,7 @@
       </div>
     
       <div class="item">
-        <img src="img/intro-bg.jpg" alt="Create" width="100%" height="100%">
+        <img src="img/intro-big.jpg" alt="Create" width="100%" height="100%">
         <div class="carousel-caption">
           <h1 class="txtShadow1">Create</h1>
           <p>Make memories and make followers.</p>
@@ -115,7 +109,7 @@
       </div>
 
       <div class="item">
-        <img src="img/intro-bg.jpg" alt="Share" width="100%" height="100%">
+        <img src="img/intro-big.jpg" alt="Share" width="100%" height="100%">
         <div class="carousel-caption">
           <h1 class="txtShadow"1>Share</h1>
           <p>Meet alike people, share drinks, share stories.</p>
@@ -137,22 +131,22 @@
 </div>
 
     <!-- Contact Section -->
-    <section id="contact" class="container text-center mt100">
+    <section id="contact" class="container text-center greyText">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-8 col-lg-offset-2 mt100">
                 <h2>Follow us & other crazy people like <br/><br/><span class="label label-danger">you</span></h2>
                 <p>You can give feedback, follow us or follow other crazy people on our social networks.</p>
                 <p><a href="mailto:feedback@startbootstrap.com" class="label label-default">feedback@drunkdiaries.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://twitter.com/" class="btn btn-site btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/Drunken-Diaries-1662222597400561" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>                        
+                        <a href="https://www.facebook.com/Drunken-Diaries-1662222597400561" class="btn btn-site btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>                        
                     </li>
                     <li>
-                        <a href="https://plus.google.com/" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        <a href="https://plus.google.com/" class="btn btn-site btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
                     </li>
                 </ul>
             </div>
@@ -166,7 +160,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div class="container text-center greyText">
             <p>Copyright &copy; DrunkenDiaries.com 2015</p>
         </div>
     </footer>

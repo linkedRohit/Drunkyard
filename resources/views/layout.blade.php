@@ -34,34 +34,55 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <div class='error-box' style='display:none'></div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+   
+    <div class="drunkyard-navigation">
+    <nav id="dyNavbar" class="navbar navbar-custom navbar-fixed-top navbar-loggedIn" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color: rgba(0, 0, 0, 0.1);">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar" style="background-color: #fff;"></span>
+                    <span class="icon-bar" style="background-color: #fff;"></span>
+                    <span class="icon-bar" style="background-color: #fff;"></span>
                 </button>
-                <a class="navbar-brand page-scroll txtShadow" href="/">
-                    <i class="fa fa-beer"></i><span class="light"> Crazy</span> Itenaries
-                </a>
-            </div>
+                <a class="navbar-brand menuHeadTxt" href="#"><i class="fa fa-beer"></i>Drunk<span class="light">yard</span></a>
 
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div class="collapse navbar-collapse menuTxt" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                    <li><a href="/home"><span class="fa fa-magic"></span> Explore</a></li>
+                    <li><a href="/story/create/11422"><span class="fa fa-file-text-o"></span> Create Story</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-list"></span> Categories <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="menuListItem"><a href="#">Parties</a></li>
+                            <li class="menuListItem"><a href="#">Farm Houses</a></li>
+                            <li class="menuListItem"><a href="#">House Parties</a></li>
+                            <li class="divider"></li>
+                            <li class="menuListItem"><a href="#">Car Parties</a></li>
+                        </ul>
                     </li>
-        		    <li>
-        			    <a href="/auth/logout" id="logOutId" class="btn btn-lg radius pd12ud"><span class="network-name">Logout</span></a>
+                    <li><a href="#"><span class="fa fa-bank"></span> My yard</a></li>                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="fa fa-inbox"></span> </a></li>
+                    <li><a href="#"><span class="fa fa-bell-o"></span> </a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-user"></span> Rohit Sharma <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="menuListItem"><a href="#"><span class="fa fa-gears"></span> My Profile</a></li>
+                            <li class="menuListItem"><a href="#"><span class="fa fa-lock"></span> Change Password</a></li>
+                            <li class="divider"></li>
+                            <li class="menuListItem"><a href="/auth/logout" id="logOutId"><span class="network-name"><span class="fa fa-sign-out"></span> Logout</span></a></li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            </div><!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
+</div>
 
 	@yield('content')
 
