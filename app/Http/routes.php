@@ -30,3 +30,5 @@ Route::get('google_callback', 'WelcomeController@google');
 
 Route::get('twitter', 'WelcomeController@twitter_redirect');
 Route::get('twitter_callback', 'WelcomeController@twitter');
+
+Route::get('/create', 'StoryController@create');

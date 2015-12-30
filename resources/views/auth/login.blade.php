@@ -34,13 +34,13 @@
                             <div class="socialSignUpButtons">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                        <a class="tw" href="#"> <i class="fa fa-twitter"> </i>   Twitter</a>
+                                        <a class="tw" href="{!!URL::to('twitter')!!}"> <i class="fa fa-twitter"> </i>   Twitter</a>
                                     </div>  
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                        <a class="fb" href="#"> <i class="fa fa-facebook"> </i>   Facebook</a>
+                                        <a class="fb" href="{!!URL::to('facebook')!!}"> <i class="fa fa-facebook"> </i>   Facebook</a>
                                     </div>  
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                        <a class="go" href="#"><i class="fa fa-google-plus"> </i>   Google+</a>
+                                        <a class="go" href="{!!URL::to('google')!!}"><i class="fa fa-google-plus"> </i>   Google+</a>
                                     </div>  
                                 </div>
                             </div>

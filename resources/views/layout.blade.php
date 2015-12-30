@@ -19,6 +19,8 @@
     <link href="{{ asset('/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     <link href="" rel="stylesheet" >
 
+    @yield('css')
+
 	<!-- jQuery -->
     <script src="{{ asset('/js/jquery.js') }}"></script>
     <!-- Internet explorer support -->
@@ -99,6 +101,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ asset('/js/diaries.js') }}"></script>
     <script src="{{ asset('/js/main.js') }}"></script>
+
+    @yield('script')
 
 </body>
 

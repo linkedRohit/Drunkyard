@@ -31,4 +31,9 @@ class StoryController extends Controller {
 		return view('welcome');
 	}
 
+	public function create() 
+	{
+	    return view('Story/CreateStory');
+	}
+
 }
