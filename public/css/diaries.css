@@ -350,6 +350,7 @@ ul.banner-social-buttons {
 
 footer {
     padding: 50px 0;
+    border-top: 2px dashed #777;
 }
 
 footer p {
@@ -379,6 +380,9 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+.mt50{
+    margin-top:50px;
+}
 .mt10{
     margin-top:10px;
 }
@@ -407,6 +411,10 @@ body {
 .pd25lr{
     padding-left: 25px;
     padding-right: 25px;
+}
+.pd50lr{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .txtShadow{
     text-shadow: 0 2px 2px rgba(0,0,0,0.3);
@@ -589,4 +597,90 @@ ul.li{
 }
 .menuListItem:hover{
     background-color: #7C46E6
+}
+.txtBoxStyle{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px dashed    #7C46E6;
+    color: #777;
+    font-size: 32px;
+    font-family: "Lucida Grande", "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #7C46E6;
+}
+::selection {
+    color: white; 
+    background: #7C46E6;
+}
+.typing
+{
+    width: 60%;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 2s steps(50, end);
+    animation: type 2s steps(50, end)1;
+    display: inline-block;
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0;  }
+}
+
+.heading{
+    font-size: 32px;
+    color: #777;
+}
+div.mce-fullscreen {
+    z-index: 1050;
+}
+.dyBackGround{    
+    color: #7C46E6 !important;
+    font-size: 22px;
+    font-weight: bold;
+}
+.previewButton, .storyButton{
+    position: relative;
+    vertical-align: top;
+    width: 20%;
+    height: 54px;
+    font-size: 22px;
+    padding: 20;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+    float:right;
+    margin: 30px;
+}
+.storyButton{
+    background: #7C46E6;
+    -webkit-box-shadow: inset 0 -2px #4D1CAD;
+    box-shadow: inset 0 -2px #4D1CAD; 
+    border-bottom: 2px solid #4D1CAD;  
+}
+.previewButton{
+    background: #E68846;
+    -webkit-box-shadow: inset 0 -2px #945D36;
+    box-shadow: inset 0 -2px #945D36; 
+    border-bottom: 2px solid #945D36;   
+}
+.fbk{
+    background-color: #45619D;
+}
+.twt{
+    background-color: #0084B4;
+}
+.gog{
+    background-color: #d9534f;
+}
+.fbk, .twt, .gog{
+    border-radius: 10px;
 }
