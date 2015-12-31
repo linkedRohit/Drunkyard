@@ -138,6 +138,8 @@ return [
         'Laravel\Socialite\SocialiteServiceProvider',
         'Repositories\User\UserRepositoryServiceProvider',
         'Services\User\UserServiceServiceProvider',
+        'Repositories\Story\StoryRepositoryServiceProvider',
+        'Services\Story\StoryServiceServiceProvider',
 
 		/*
 		 * Application Service Providers...
@@ -196,7 +198,8 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 	    'Socialize' => 'Laravel\Socialite\Facades\Socialite',
-	    'AccUser'   => 'Services\User\UserFacade'
+	    'AccUser'   => 'Services\User\UserFacade',
+	    'Story'     => 'Services\Story\StoryFacade'
 	],
 
 ];

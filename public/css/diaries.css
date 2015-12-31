@@ -91,12 +91,14 @@ a:focus {
     outline: 0;
     color: #fff;
     background-color: #7C46E6;
+    border-bottom: 5px solid #0f0;
 }
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
     background-color: transparent;
+    border-bottom: 5px solid #0f0;
 }
 
 .navbar-custom .nav li.active {
@@ -683,4 +685,8 @@ div.mce-fullscreen {
 }
 .fbk, .twt, .gog{
     border-radius: 10px;
+}
+.lbbordr2px{
+    border-left: 2px dashed #777;
+    border-bottom: 2px dashed #777;
 }

@@ -18,6 +18,7 @@ Route::get('home', 'HomeController@index');
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
+	'story' => 'StoryController',
 ]);
 
 // Redirect to facebook, twitter, google to authenticate
@@ -31,6 +32,8 @@ Route::get('google_callback', 'WelcomeController@google');
 Route::get('twitter', 'WelcomeController@twitter_redirect');
 Route::get('twitter_callback', 'WelcomeController@twitter');
 
-Route::get('/create', 'StoryController@create');
-
 Route::post('/dyUploader', 'HomeController@uploadFile');
+
+
+Route::get('/create', 'StoryController@createStory');
+Route::get('/feed', 'StoryController@getStories');

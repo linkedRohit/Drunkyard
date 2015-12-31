@@ -1,5 +1,8 @@
 <?php namespace drunkyard\Http\Controllers;
 
+use Story;
+use Route;
+
 class StoryController extends Controller {
 
 	/*
@@ -31,9 +34,13 @@ class StoryController extends Controller {
 		return view('welcome');
 	}
 
-	public function create() 
-	{
+	public function createStory() 
+	{	
 	    return view('Story/CreateStory');
+	}
+
+	public function getStories() {
+	    return 'Hello World';
 	}
 
 }
