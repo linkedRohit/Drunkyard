@@ -5,10 +5,10 @@
                 <div class="row">
                     <div class="col-md-4 hidden-xs mt10"> <!-- data-spy="affix" data-offset-top="1200"-->
                         <div class="featured">
-                            <div class="panel panel-default">
+                            <div class="panel panel-default noBorder">
                                 <div class="panel-body">
                                     <div class="col-md-4">
-                                        <a href="/profile/123123/edit" class="change"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="100px" width="100px">
+                                        <a href="/profile/123123/edit" class="change"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="75px" width="75px">
                                         Change pic</a>
                                     </div>
                                     <div class="col-md-8">
@@ -23,10 +23,9 @@
                                             <div class="col-sm-4 taCenter"><a href="/Profile">69</a> Followers</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="panel-footer taCenter"><a href="/Profile/author_rohit">@author_rohit</a></div>                                
+                                </div>                              
                             </div>
-                            <div class="panel panel-default">
+                            <div class="panel panel-danger">
                                 <div class="panel-body grey">
                                     <div class="col-sm-12 storyListItem">
                                     <a href="/story/123123" >Hangout after our office on friday.</a><br/>
@@ -60,7 +59,7 @@
                                 </div>
                                 <div class="panel-footer">Trending stories for the day</div>                                
                             </div>
-                            <div class="panel panel-success">
+                            <div class="panel panel-danger">
                                     <div class="panel-body">
                                         <label class="dyLabel"><a href="" class="anchor">Story</a></label>
                                         <label class="dyLabel"><a href="" class="anchor">Drunken</a></label>
@@ -78,7 +77,7 @@
                                     <div class="panel-footer">Recommended Tags</div>                                
                                 </div>
                             </div>
-                            <div class="panel panel-danger">
+                            <div class="panel panel-primary">
                                     <div class="panel-body">
                                         <label class="dyLabel"><a href="" class="anchor">Story</a></label>
                                         <label class="dyLabel"><a href="" class="anchor">Drunken</a></label>
@@ -95,6 +94,7 @@
                                     </div>
                                     <div class="panel-footer">Your areas of interest</div>                                
                                 </div>
+
                             <div class="panel panel-primary">
                                 <div class="panel-body grey">
                                     <div class="col-sm-12 storyListItem">
@@ -108,8 +108,8 @@
 
                                         <span>
                                             <span class="fa fa-eye" title="views">23</span>
-                                            <span class="fa fa-beer ml5" title="Cheers">123</span>
-                                            <span class="fa fa-share ml5" title="Shares">5</span>
+                                            <span class="fa fa-beer ml10" title="Cheers">123</span>
+                                            <span class="fa fa-share ml10" title="Shares">5</span>
                                         </span>
                                         <span class="pull-right">Posted 5 days ago</span>
                                     </div>
@@ -124,27 +124,106 @@
 
                                         <span>
                                             <span class="fa fa-eye" title="views">23</span>
-                                            <span class="fa fa-beer ml5" title="Cheers">123</span>
-                                            <span class="fa fa-share ml5" title="Shares">5</span>
+                                            <span class="fa fa-beer ml10" title="Cheers">123</span>
+                                            <span class="fa fa-share ml10" title="Shares">5</span>
                                         </span>
                                         <span class="pull-right">Posted 5 days ago</span>
                                     </div>
                                 </div>
                                 <div class="panel-footer">Your most popular stories</div>                                
                             </div>
-
-                                <div class="lbbordr2px">
-                                    <span class="footerAnchor">&copy; 2016 Drunkyard</span>
-                                    <a href="" class="footerAnchor">About us</a>
-                                    <a href="" class="footerAnchor">Feedback</a>
-                                    <a href="" class="footerAnchor">Careers </a>
-                                    <a href="" class="footerAnchor">Privacy </a>
-                                    <a href="" class="footerAnchor">Terms </a>
-                                </div>
+                            <div class="lbbordr2px">
+                                <span class="footerAnchor">&copy; 2016 Drunkyard</span>
+                                <a href="" class="footerAnchor">About us</a>
+                                <a href="" class="footerAnchor">Feedback</a>
+                                <a href="" class="footerAnchor">Careers </a>
+                                <a href="" class="footerAnchor">Privacy </a>
+                                <a href="" class="footerAnchor">Terms </a>
+                            </div>
                             </div>
                             <div class="col-md-8 col-xs-12 pull-right feed">
-                                <div class="row">
-                                    
+                                <div class="row mt10">
+                                    <div class="panel panel-default noBorder">
+                                        <div class="panel-body">
+                                            <div class="col-md-1">
+                                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="46px" width="46px">
+                                            </div>
+                                            <div class="col-md-11">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <textarea id="inlineTextEditor" placeholder="Share your crazy story here ..."></textarea>
+                                                        <input type="button" class="inlineBtn  pull-right" value="Create Story"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                    <h4>Top Stories as per your interest
+                                    <a href="#"><span class="pull-right fa fa-close"></span></a></h4>
+                                    <div class="panel panel-default noBorder">
+                                        <div class="panel-body">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-1">
+                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p50x50/12314072_1130059203672587_6253485267513126975_n.jpg?oh=ab583980df38dfc4899428a091c52b0a&oe=57086A7A&__gda__=1460329184_2691551f99f76d8959ca88038b8e2136" class="image" height="46px" width="46px">
+                                                </div>
+                                            </a>
+                                            <div class="col-md-11">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h4>Story heading is written here</h4>
+                                                        <h><a href="/profile/123132231">Rakesh Kumar</a>
+                                                        <a href="/Message/13213" class=" fa fa-send" title="Message"></a></h>
+                                                        <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="panel-footer">
+                                            <a href="#"><span class="fa fa-eye" title="views"><b> 23</b></span></a>
+                                            <a href="#"><span class="tab fa fa-beer ml10" title="Cheers"><b> 123</b></span></a>
+                                            <a href="#"><span class="tab fa fa-share ml10" title="Shares"><b> 4</b></span></a>
+                                            <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>     
+                                            <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                            <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>                                        
+                                            <span class="pull-right"><span class="fa fa-clock-o" title="views"></span> 1 hours ago 
+                                            <span class="tab"><a href="/tags/23123123/">  Hangover <a><span class="fa fa-group" title="Group"></span></span></span>
+                                        </div>                          
+                                    </div>
+                                    <div class="feedItem"></div>
+                                    <div class="panel panel-default noBorder">
+                                        <div class="panel-body">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-1">
+                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="46px" width="46px">
+                                                </div>
+                                            </a>
+                                            <div class="col-md-11">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                        <p>THis is a story of happy new year sample story. THis is a story of happy new year sample story.THis is a story of happy new year sample story.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="panel-footer">
+                                            <span class="">
+                                                <a href="#"><span class="fa fa-eye" title="views">23</span></a>
+                                                <a href="#"><span class="tab fa fa-beer ml10" title="Cheers">123</span></a>
+                                                <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                            </span>
+                                            <span class="pull-right">
+                                                <span class="fa fa-clock-o" title="views"></span> Posted 5 days ago in 
+                                                <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                    <span class="fa fa-group" title="Group"></span>
+                                                </span>
+                                            </span>
+                                        </div>                          
+                                    </div>
                                 </div>
                             </div>
                     </div>

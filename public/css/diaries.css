@@ -771,19 +771,22 @@ div.mce-fullscreen {
     color: #337ab7;
     font-size: 16px;
 }
+.grey a:hover{
+    color: #337ab7;
+}
 .storyListItem{
     border-bottom: 1px dotted #777;
     padding: 10px;
 }
-
 .storyListItem-last{
     padding: 10px;
     margin-top: 10px;
 }
-.ml5{
-    margin-left: 8px;
+.ml10{
+    margin-left: 10px;
 }
 .author{
+    font-size: 12px !important;
     color: #777 !important;
 }
 .author:hover{
@@ -792,9 +795,50 @@ div.mce-fullscreen {
 .image:hover ~ .change {
     color: #55F;
 }
-
 .fixed{
     position: fixed;
     top: 50px;
     opacity: 1;
+}
+textarea, textarea:focus{
+    width: 80%;
+    border: none;
+    overflow: visible;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    overflow-y: auto;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+.inlineBtn{
+    border: 1px dashed;
+    border-radius: 10px;
+    height: 40px;
+    width: 125px;
+}
+.tab{
+    margin-left: 50px;
+}
+.feed a{
+    color: #777;
+}
+.feed a:hover {
+    color: #00ab6b;
+}
+.smallText{
+    font-size: 12px;
+}
+.noBorder{
+    border:0;
+}
+.storyText{
+    font-family: "Times New Roman";
+}
+.feedItem{
+    border-top: 1px dashed #00f;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
 }
