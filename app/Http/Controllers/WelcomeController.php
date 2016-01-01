@@ -43,7 +43,7 @@ class WelcomeController extends Controller {
 
 	public function facebook() {
 	  $user = Socialize::with('facebook')->user();
-	  print_r($user);die;
+	  AccUser::Save($user);
 	}
 
 	public function google_redirect(){
@@ -79,6 +79,16 @@ class WelcomeController extends Controller {
 	    }
 	    echo Auth::user()->name;
 	}
+/*
+	public function medium_redirect(){
+		return Socialize::with('medium')->redirect();
+	}
+
+	public function medium() {
+	  $user = Socialize::with('medium')->user();
+	  print_r($user);die;
+	}
+*/
 
 
 }

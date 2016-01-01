@@ -52,4 +52,10 @@ return [
                 'redirect' => 'http://localhost:8000/twitter_callback',
         ],
 
+        'medium' => [
+        		'client_id' => 'd2fb388b5865',
+                'client_secret' => 'e223815cfbd0b1ccc308c1c133c0e4d7e4c5fe57',
+                'redirect' => 'http://localhost:8000/medium_callback',
+        ],
+
 ];

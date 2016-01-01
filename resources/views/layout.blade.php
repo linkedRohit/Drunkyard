@@ -72,8 +72,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="fa fa-inbox"></span> </a></li>
                     <li><a href="#"><span class="fa fa-bell-o"></span> </a></li>
+                    <!--<li><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image_thumb" height="23px" width="23px"></li>                        -->
                     <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-user"></span> Rohit Sharma <b class="caret"></b></a>
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Rohit <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="menuListItem"><a href="#"><span class="fa fa-gears"></span> My Profile</a></li>
                             <li class="menuListItem"><a href="#"><span class="fa fa-lock"></span> Change Password</a></li>
@@ -117,6 +118,15 @@
                 </p> <br/>
             <p>Copyright &copy; DrunkenDiaries.com 2015</p>
         </div>
+        <div class="lbbordr2px mt50">
+                                    <a href="" class="footerAnchor">About us</a>
+                                    <a href="" class="footerAnchor">FAQs</a>
+                                    <a href="" class="footerAnchor">Contact us</a>
+                                    <a href="" class="footerAnchor">Feedback</a>
+                                    <a href="" class="footerAnchor">Careers </a>
+                                    <a href="" class="footerAnchor">Privacy </a>
+                                    <a href="" class="footerAnchor">Terms </a>
+                                </div>
     </section>
     </footer>
 

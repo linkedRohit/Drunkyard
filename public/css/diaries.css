@@ -7,7 +7,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
     color: #fff;
 }
 
@@ -23,14 +23,14 @@ h4,
 h5,
 h6 {
     margin: 0 0 20px;
-    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 p {
     font-size: 18px;
-    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
 }
 
 a {
@@ -38,7 +38,7 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
 }
 
 a:hover,
@@ -54,7 +54,7 @@ a:focus {
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
     background-color: #3B5998;
 }
 
@@ -85,20 +85,21 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    border-bottom: 5px solid #7C46E6;
 }
 
 .navbar-custom .nav li a:hover {
     outline: 0;
     color: #fff;
     background-color: #7C46E6;
-    border-bottom: 5px solid #0f0;
+    border-bottom: 5px solid #7EE6B7;
 }
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
     background-color: transparent;
-    border-bottom: 5px solid #0f0;
+    border-bottom: 5px solid #7EE6B7;
 }
 
 .navbar-custom .nav li.active {
@@ -127,7 +128,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        background: rgba(124,70,230,0.90);
     }
 }
 
@@ -307,7 +308,7 @@ a:focus {
 
 .btn {
     border-radius: 2;
-    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -461,7 +462,7 @@ ul.li{
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
 }
 
 .sign-in{
@@ -531,7 +532,7 @@ ul.li{
 }
 .bulletPoints{
     background-color:rgba(0,0,0,.5);
-    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
     font-size: 19px;
     font-weight: 800;
     list-style: none;
@@ -550,7 +551,7 @@ ul.li{
     margin-left: 40%;
     background-color: rgb(125, 195, 125);
     color: #F0F0F0;
-    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
     font-weight: 700;
     width:300px;
     position: absolute;
@@ -575,7 +576,7 @@ ul.li{
 }
 .navbar-loggedIn{
     padding: 0;
-    background-color: #7C46E6;
+    background-color: rgba(124,70,230,0.90);
 }
 .pd0{
     padding-left:0px;
@@ -600,6 +601,9 @@ ul.li{
 .menuListItem:hover{
     background-color: #7C46E6
 }
+.menuListItem a{
+    border: 0px !important;
+}
 .txtBoxStyle{
     border: 0;
     outline: 0;
@@ -607,7 +611,7 @@ ul.li{
     border-bottom: 1px dashed    #7C46E6;
     color: #777;
     font-size: 32px;
-    font-family: "Lucida Grande", "Helvetica Neue", Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
 }
 ::-moz-selection { /* Code for Firefox */
     color: white;
@@ -686,7 +690,111 @@ div.mce-fullscreen {
 .fbk, .twt, .gog{
     border-radius: 10px;
 }
-.lbbordr2px{
-    border-left: 2px dashed #777;
-    border-bottom: 2px dashed #777;
+.lbbordr2px {
+    border-top: 1px solid #777;
+}
+.bkgGrey {
+    background-color: rgb(250, 250, 250);
+}
+.featured{
+}
+.feed{
+}
+.featuredTags {
+    border-top: 1px solid #777;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.panel-heading {
+    font-weight: 600;
+}
+.dyLabel {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    font-size: 13px;
+    letter-spacing: 0;
+    text-decoration: none;
+    background: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #f0f0f0;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+.dyLabel a{
+    color: rgba(0,0,0,0.44);
+}
+.dyLabel a:hover{
+    color: rgb(124, 70, 230);
+    font-weight: bold;
+}
+.lbbordr2px a{
+    color: #777;
+}
+.footerAnchor{
+    font-size: 11px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.footerAnchor:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.affix{
+    position:fixed;
+    z-index: 1;
+    width: inherit;
+}
+.image{
+    border-radius: 23px;
+}
+.image:hover{
+    opacity: 0.3;
+}
+.image_thumb{
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.taCenter{
+    text-align: center;
+}
+.taCenter a{
+    color: rgba(124, 70, 230, 1);
+}
+.menuListItem a:hover{
+    border-bottom: 0px !important;
+}
+.grey a{
+    color: #337ab7;
+    font-size: 16px;
+}
+.storyListItem{
+    border-bottom: 1px dotted #777;
+    padding: 10px;
+}
+
+.storyListItem-last{
+    padding: 10px;
+    margin-top: 10px;
+}
+.ml5{
+    margin-left: 8px;
+}
+.author{
+    color: #777 !important;
+}
+.author:hover{
+    color: #222 !important;
+}
+.image:hover ~ .change {
+    color: #55F;
+}
+
+.fixed{
+    position: fixed;
+    top: 50px;
+    opacity: 1;
 }

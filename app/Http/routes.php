@@ -32,6 +32,9 @@ Route::get('google_callback', 'WelcomeController@google');
 Route::get('twitter', 'WelcomeController@twitter_redirect');
 Route::get('twitter_callback', 'WelcomeController@twitter');
 
+Route::get('medium', 'WelcomeController@medium_redirect');
+Route::get('medium_callback', 'WelcomeController@medium');
+
 Route::post('/dyUploader', 'HomeController@uploadFile');
 
 
