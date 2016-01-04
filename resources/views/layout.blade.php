@@ -43,21 +43,32 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color: rgba(0, 0, 0, 0.1);">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dyNavCollapse" style="background-color: rgba(0, 0, 0, 0.1);">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar" style="background-color: #fff;"></span>
                     <span class="icon-bar" style="background-color: #fff;"></span>
                     <span class="icon-bar" style="background-color: #fff;"></span>
                 </button>
                 <a class="navbar-brand menuHeadTxt" href="/home"><i class="fa fa-beer"></i>Drunk<span class="light">yard</span></a>
-
+                <div class="nav navbar-brand pull-right notifications">
+                      <a href="#" >
+                        <i class="fa fa-bell"></i>
+                        <span class="label label-danger">11</span>
+                      </a>
+                  </div>
+                  <div class="nav navbar-brand pull-right notifications">
+                      <a href="#" >
+                        <i class="fa fa-inbox"></i>
+                        <span class="label label-success">2</span>
+                      </a>
+                  </div>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse menuTxt" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse menuTxt" id="dyNavCollapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/home"><span class="fa fa-magic"></span> Explore</a></li>
                     <li><a href="/create"><span class="fa fa-file-text-o"></span> Create Story</a></li>
-                    <li class="dropdown">
+                    <!--<li class="dropdown">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-list"></span> Categories <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="menuListItem"><a href="#">Parties</a></li>
@@ -66,15 +77,22 @@
                             <li class="divider"></li>
                             <li class="menuListItem"><a href="#">Car Parties</a></li>
                         </ul>
-                    </li>
-                    <li><a href="#"><span class="fa fa-bank"></span> My yard</a></li>                    
+                    </li>-->
+                    <li><a href="#"><span class="fa fa-calendar"></span> Hangout</a></li>                    
+                    <li><a href="#"><span class="fa fa-bank"></span> My yard</a></li> 
+                    <!--<form role="search" class="navbar-form navbar-left hidden-xs">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search" class="form-control">
+                        </div>
+                    </form>   -->
+                    <li class="visible-xs"><a href="#"><span class="fa fa-gears"></span> My Profile</a></li>                 
+                    <li class="visible-xs"><a href="#"><span class="fa fa-lock"></span> Change Password</a></li>            
+                    <li class="visible-xs"><a href="/auth/logout"><span class="fa fa-sign-out"></span> Logout</a></li>         
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="fa fa-inbox"></span> </a></li>
-                    <li><a href="#"><span class="fa fa-bell-o"></span> </a></li>
                     <!--<li><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image_thumb" height="23px" width="23px"></li>                        -->
                     <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Rohit <b class="caret"></b></a>
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-xs"> Rohit <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="menuListItem"><a href="#"><span class="fa fa-gears"></span> My Profile</a></li>
                             <li class="menuListItem"><a href="#"><span class="fa fa-lock"></span> Change Password</a></li>

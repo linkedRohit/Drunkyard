@@ -2,6 +2,7 @@
 
 use Story;
 use Route;
+use Request;
 
 class StoryController extends Controller {
 
@@ -36,7 +37,10 @@ class StoryController extends Controller {
 
 	public function createStory() 
 	{	
-	    return view('Story/CreateStory');
+		$dataBag = array();
+		$title = Request::input() && Request::input()['title'] ? Request::input()['title'] : "";
+		$dataBag['title'] = $title;
+	    return view('Story/CreateStory', $dataBag);
 	}
 
 	public function getStories() {

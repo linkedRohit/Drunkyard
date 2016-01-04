@@ -5,8 +5,8 @@
 
 @section('content')
 	<div class="container mt100 pd50lr">
-		<input type="text" class="txtBoxStyle typing" placeholder="Title of the story" /> <br/><br/>
-		<h class="heading">Story Overview</h><span class="greyText"> ( use hashtags to make it appear on top for similar search keywords )</span>
+		<input type="text" class="txtBoxStyle typing" placeholder="Title of the story" value="{{ $title }}"/> <br/><br/>
+		<h class="heading">Story Overview  </h><a class="fa fa-info-circle greyText" title="1. Use hashtags to make your story stand out 2. Easy drag and drop images to the description."></a>
 		<textarea placeholder="We are excited to know your story, so as the people out there"></textarea><br/><br/>
 		<h class="heading">Upload your images</h>
 		<form action="/dyUploader" method="post" enctype="multipart/form-data"
@@ -18,8 +18,8 @@
 			</div>
 	    </form>
 	    <input type="text" class="txtBoxStyle typing mt50" placeholder="Tag friends, places, events" /> <br/><br/>
-	    <input type="button" value="Preview story" class="previewButton">
-	    <input type="button" value="Create story" class="storyButton">
+	    <input type="button" id="prevStory" value="Preview story" class="previewButton">
+	    <input type="button" id="createStory" value="Create story" class="storyButton">
 	</div>
 @endsection
 
@@ -55,7 +55,7 @@
 
 
 	Dropzone.options.myAwesomeDropzone = {
-	  headers: image-dy
+	  headers: image-dy,
 	  uploadMultiple: true,
 	  maxFilesize: 3, // MB
 	  accept: function(file, done) {

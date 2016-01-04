@@ -820,6 +820,7 @@ textarea, textarea:focus{
 }
 .tab{
     margin-left: 50px;
+    width: 10px;
 }
 .feed a{
     color: #777;
@@ -830,7 +831,7 @@ textarea, textarea:focus{
 .smallText{
     font-size: 12px;
 }
-.noBorder{
+.border{
     border:0;
 }
 .storyText{
@@ -838,7 +839,16 @@ textarea, textarea:focus{
 }
 .feedItem{
     border-top: 1px dashed #00f;
-    margin-top: 50px;
-    margin-bottom: 50px;
     text-align: center;
+}
+.renderFeed{
+
+}
+.TopStoryPanel{
+    border-bottom: 2px dashed #777 ;
+}
+.fixAndBorder{
+    border-right:1px dashed #777;
+    left: 15px;
+    position: fixed;
 }

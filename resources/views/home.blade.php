@@ -3,9 +3,9 @@
 @section('content')
             <div class="container greyText mt50">
                 <div class="row">
-                    <div class="col-md-4 hidden-xs mt10"> <!-- data-spy="affix" data-offset-top="1200"-->
+                    <div class="col-md-4 visible-lg visible-md mt10 fixAndBorder"> <!-- data-spy="affix" data-offset-top="1200"-->
                         <div class="featured">
-                            <div class="panel panel-default noBorder">
+                            <div class="panel panel-default">
                                 <div class="panel-body">
                                     <div class="col-md-4">
                                         <a href="/profile/123123/edit" class="change"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="75px" width="75px">
@@ -141,9 +141,9 @@
                                 <a href="" class="footerAnchor">Terms </a>
                             </div>
                             </div>
-                            <div class="col-md-8 col-xs-12 pull-right feed">
+                            <div class="col-md-8 col-xs-12 pull-right feed col-md-4-offset">
                                 <div class="row mt10">
-                                    <div class="panel panel-default noBorder">
+                                    <div class="panel panel-default border">
                                         <div class="panel-body">
                                             <div class="col-md-1">
                                                 <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="46px" width="46px">
@@ -152,80 +152,162 @@
                                                 <div class="row">
                                                     <div class="col-sm-12">
                                                         <textarea id="inlineTextEditor" placeholder="Share your crazy story here ..."></textarea>
-                                                        <input type="button" class="inlineBtn  pull-right" value="Create Story"/>
+                                                        <input type="button" class="inlineBtn  pull-right" value="Create Story" id="createStoryId"/>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>                            
                                     </div>
-                                    <h4>Top Stories as per your interest
+                                    <h4 class="col-sm-12">Top Stories as per your interest
                                     <a href="#"><span class="pull-right fa fa-close"></span></a></h4>
-                                    <div class="panel panel-default noBorder">
-                                        <div class="panel-body">
+                                    <div class="TopStoryPanel">
+                                        <div class="row">
+                                        <div class="col-md-1 mt10">
                                             <a href="/profile/123132231">
-                                                <div class="col-md-1">
-                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p50x50/12314072_1130059203672587_6253485267513126975_n.jpg?oh=ab583980df38dfc4899428a091c52b0a&oe=57086A7A&__gda__=1460329184_2691551f99f76d8959ca88038b8e2136" class="image" height="46px" width="46px">
+                                                <div class="col-md-12">
+                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
                                                 </div>
                                             </a>
-                                            <div class="col-md-11">
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <h4>Story heading is written here</h4>
-                                                        <h><a href="/profile/123132231">Rakesh Kumar</a>
-                                                        <a href="/Message/13213" class=" fa fa-send" title="Message"></a></h>
-                                                        <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
                                                             <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>  
-                                        <div class="panel-footer">
-                                            <a href="#"><span class="fa fa-eye" title="views"><b> 23</b></span></a>
-                                            <a href="#"><span class="tab fa fa-beer ml10" title="Cheers"><b> 123</b></span></a>
-                                            <a href="#"><span class="tab fa fa-share ml10" title="Shares"><b> 4</b></span></a>
-                                            <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>     
-                                            <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
-                                            <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>                                        
-                                            <span class="pull-right"><span class="fa fa-clock-o" title="views"></span> 1 hours ago 
-                                            <span class="tab"><a href="/tags/23123123/">  Hangover <a><span class="fa fa-group" title="Group"></span></span></span>
-                                        </div>                          
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
                                     </div>
                                     <div class="feedItem"></div>
-                                    <div class="panel panel-default noBorder">
-                                        <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-1 mt10">
                                             <a href="/profile/123132231">
-                                                <div class="col-md-1">
-                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="46px" width="46px">
+                                                <div class="col-md-12">
+                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-11 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a><br/>
+                                                    <span title="(Begineering) Rank of the user">Beginnering</span><br/>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
                                                 </div>
                                             </a>
-                                            <div class="col-md-11">
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
-                                                        <p>THis is a story of happy new year sample story. THis is a story of happy new year sample story.THis is a story of happy new year sample story.</p>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="row">
+                                                                <h4>Story heading is written here
+                                                                    <a href="" class="fa fa-eye-slash pull-right" title="Not my taste"></a></h4>
+                                                            </div>
+                                                            <h><a href="/profile/123132231">Yogesh Kumar</a>
+                                                            <a href="/Message/13213" class=" fa fa-send" title="Message"></a></h>
+                                                            posted in
+                                                            <span class="grey"><a href="/tags/23123123/">  Chilly night </a>
+                                                                <span class="fa fa-group" title="Group"></span>
+                                                            </span>
+                                                            <p>THis is a story of epsum lopsei laravel new year sample story. THis is a story of happy new year sample story.THis is a story of happy new year sample story.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>  
-                                        <div class="panel-footer">
-                                            <span class="">
-                                                <a href="#"><span class="fa fa-eye" title="views">23</span></a>
-                                                <a href="#"><span class="tab fa fa-beer ml10" title="Cheers">123</span></a>
-                                                <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
-                                                <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
-                                                <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
-                                                <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
-                                            </span>
-                                            <span class="pull-right">
-                                                <span class="fa fa-clock-o" title="views"></span> Posted 5 days ago in 
-                                                <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
-                                                    <span class="fa fa-group" title="Group"></span>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
                                                 </span>
-                                            </span>
-                                        </div>                          
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="renderFeed">
+                                    <div class="row">
+                                        <div class="col-md-1 mt10">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-12">
+                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedItem"></div>
+                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
