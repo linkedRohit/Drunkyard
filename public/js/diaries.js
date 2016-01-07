@@ -181,3 +181,18 @@ $('#createStoryId').click(function(){
     var title = $('#inlineTextEditor').val();
     window.location = "/create?title=" + title;
 });
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 800) {
+        //clearHeader, not clearheader - caps H
+        $("#leftPane").addClass("fixAndBorder");
+    } else {
+        $("#leftPane").removeClass("fixAndBorder");
+    }
+    if($('#footer').visible()) {
+        $("#leftPane").removeClass("fixAndBorder");
+    }
+});

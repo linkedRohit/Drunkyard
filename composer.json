@@ -6,7 +6,7 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "5.0.*",
-                "laravel/socialite": "~2.0"
+        "laravel/socialite": "~2.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
@@ -17,9 +17,9 @@
 			"database",
 			"app/models/Entities",
 			"app/models/Repositories",
-			"app/models/Repositories/User",
+			"app/models/Repositories/AccUser",
 			"app/models/Services",
-			"app/models/Services/User"
+			"app/models/Services/AccUser"
 		],
 		"psr-4": {
 			"drunkyard\\": "app/"

@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
@@ -22,21 +21,23 @@ Route::controllers([
 ]);
 
 // Redirect to facebook, twitter, google to authenticate
-Route::get('facebook', 'WelcomeController@facebook_redirect');
-// Get back to redirect url
-Route::get('facebook_callback', 'WelcomeController@facebook');
 
-Route::get('google', 'WelcomeController@google_redirect');
-Route::get('google_callback', 'WelcomeController@google');
+Route::get('facebook', 'Auth\AuthController@facebook_redirect');
+Route::get('facebook_callback', 'Auth\AuthController@facebook');
 
-Route::get('twitter', 'WelcomeController@twitter_redirect');
-Route::get('twitter_callback', 'WelcomeController@twitter');
+Route::get('google', 'Auth\AuthController@google_redirect');
+Route::get('google_callback', 'Auth\AuthController@google');
 
-Route::get('medium', 'WelcomeController@medium_redirect');
-Route::get('medium_callback', 'WelcomeController@medium');
+Route::get('twitter', 'Auth\AuthController@twitter_redirect');
+Route::get('twitter_callback', 'Auth\AuthController@twitter');
+
+Route::get('medium', 'Auth\AuthController@facebook_medium');
+Route::get('medium_callback', 'Auth\AuthController@medium');
 
 Route::post('/dyUploader', 'HomeController@uploadFile');
 
 
 Route::get('/create', 'StoryController@createStory');
 Route::get('/feed', 'StoryController@getStories');
+
+Route::get('/', 'WelcomeController@index');

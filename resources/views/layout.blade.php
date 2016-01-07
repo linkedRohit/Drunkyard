@@ -108,7 +108,7 @@
 
 	@yield('content')
 
-     <footer class="mt100">
+     <footer class="mt100" id="footer">
     <!-- Contact Section -->
     <section id="contact" class="container text-center greyText">
         <div class="row">

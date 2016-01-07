@@ -5,6 +5,7 @@ use Validator;
 use File;
 use Response;
 use Illuminate\Http\Request;
+use Auth;
 
 class HomeController extends Controller {
 
@@ -36,7 +37,12 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+		$user = Auth::user();
+		//var_dump($user);die;
+		if($user)
+			return view('home', $user);
+		else
+			return view('login');
 	}
 
 

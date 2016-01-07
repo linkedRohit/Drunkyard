@@ -3,12 +3,12 @@
 @section('content')
             <div class="container greyText mt50">
                 <div class="row">
-                    <div class="col-md-4 visible-lg visible-md mt10 fixAndBorder"> <!-- data-spy="affix" data-offset-top="1200"-->
+                    <div class="col-md-4 visible-lg visible-md mt10" id="leftPane"> <!-- data-spy="affix" data-offset-top="1200"-->
                         <div class="featured">
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <div class="col-md-4">
-                                        <a href="/profile/123123/edit" class="change"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="75px" width="75px">
+                                        <a href="/profile/123123/edit" class="change"><img src={{ $avatar }} class="image" height="75px" width="75px">
                                         Change pic</a>
                                     </div>
                                     <div class="col-md-8">
@@ -146,7 +146,7 @@
                                     <div class="panel panel-default border">
                                         <div class="panel-body">
                                             <div class="col-md-1">
-                                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="46px" width="46px">
+                                                <img src= {{ $avatar }} class="image" height="46px" width="46px">
                                             </div>
                                             <div class="col-md-11">
                                                 <div class="row">
@@ -165,7 +165,7 @@
                                         <div class="col-md-1 mt10">
                                             <a href="/profile/123132231">
                                                 <div class="col-md-12">
-                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="50px" width="50px">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
                                                 </div>
                                                 <div class="col-sm-12 mt10">
                                                     <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
@@ -211,7 +211,7 @@
                                         <div class="col-md-1 mt10">
                                             <a href="/profile/123132231">
                                                 <div class="col-md-12">
-                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="50px" width="50px">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
                                                 </div>
                                                 <div class="col-sm-11 mt10">
                                                     <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a><br/>
@@ -263,7 +263,375 @@
                                         <div class="col-md-1 mt10">
                                             <a href="/profile/123132231">
                                                 <div class="col-md-12">
-                                                    <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image" height="50px" width="50px">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedItem"></div>
+                                     <div class="row">
+                                        <div class="col-md-1 mt10">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-12">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedItem"></div>
+                                     <div class="row">
+                                        <div class="col-md-1 mt10">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-12">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedItem"></div>
+                                     <div class="row">
+                                        <div class="col-md-1 mt10">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-12">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedItem"></div>
+                                     <div class="row">
+                                        <div class="col-md-1 mt10">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-12">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedItem"></div>
+                                     <div class="row">
+                                        <div class="col-md-1 mt10">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-12">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedItem"></div>
+                                     <div class="row">
+                                        <div class="col-md-1 mt10">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-12">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedItem"></div>
+                                     <div class="row">
+                                        <div class="col-md-1 mt10">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-12">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
+                                                </div>
+                                                <div class="col-sm-12 mt10">
+                                                    <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
+                                                        <span title="Rank of the user">Writer</span>
+                                                    <a href="#"><span class="fa fa-arrow-down taCenter ml10"></span></a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="panel panel-default border">
+                                            <div class="panel-body">
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h5><a href="/profile/123132231">Rakesh Kumar</a></h5>
+                                                            <p>THis is a story of <br/><br/>happy new year sample <br/><br/>story. THis is a story of happy new year sample story.<br/><br/><br/>THis is a story of happy new year <br/><br/>sample story. <br/>
+                                                            <b><a href="#" class="smallText">Read more...</a></b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="panel-footer row">
+                                                <span class="col-sm-6">
+                                                    <!--<a href="#"><span class="fa fa-eye" title="views">23</span></a>-->
+                                                    <a href="#"><span class="fa fa-beer ml10" title="Cheers">123</span></a>
+                                                    <a href="#"><span class="tab fa fa-share ml10" title="Shares">5</span></a>
+                                                    <a href="#"><span class="tab fa fa-bookmark ml10" title="Watch Later"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-facebook ml10" title="Share on facebook"></span></a>    
+                                                    <a href="#"><span class="tab fa fa-twitter ml10" title="Share on twitter"></span></a>    
+                                                </span>
+                                                <span class="col-sm-6 pull-right">                                                    
+                                                    <span class="fa fa-clock-o" title="views"></span>  5 days ago 
+                                                    <span class="grey tab"><a href="/tags/23123123/">  Chilly night </a>
+                                                        <span class="fa fa-group" title="Group"></span>
+                                                    </span>
+                                                </span>
+                                            </div>                          
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedItem"></div>
+                                     <div class="row">
+                                        <div class="col-md-1 mt10">
+                                            <a href="/profile/123132231">
+                                                <div class="col-md-12">
+                                                    <img src={{ $avatar }} class="image" height="50px" width="50px">
                                                 </div>
                                                 <div class="col-sm-12 mt10">
                                                     <a href="#"><span class="fa fa-arrow-up taCenter ml10"></span></a>
