@@ -22,11 +22,16 @@
                         </ul>
                     </div>
                     <div class="col-md-6 pull-right">
-                    	@if (count($errors) > 0)
-                    		<script> 
-        						$(".error-box").text('Could not log in').fadeIn(400).delay(3000).fadeOut(400);
-                    		</script>
-						@endif
+                        @if (count($errors) > 0)
+                            <script> 
+                                var errorText = ""
+                                @foreach ($errors->all() as $error)
+                                    errorText += '<li>{{ $error }}</li>';
+                                @endforeach
+                                $(".error-box").css({ "left": "20%", "top": "20%" })
+                                $(".error-box").html(errorText).fadeIn(400).delay(3000).fadeOut(400);
+                            </script>
+                        @endif
 						<form class=" form-horizontal sign-up" role="form" method="POST" action="{{ url('/auth/login') }}">
 						    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <h1 class="formHeading">Welcome to drunkenYard</h1>

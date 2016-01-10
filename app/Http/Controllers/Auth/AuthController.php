@@ -38,7 +38,7 @@ class AuthController extends Controller {
 		$this->auth = $auth;
 		$this->registrar = $registrar;
 
-		$this->middleware('guest', ['except' => 'getLogout']);
+		$this->middleware('guest', ['except' => ['getLogout', 'checkSession']]);
 	}
 
 	/**
@@ -46,13 +46,13 @@ class AuthController extends Controller {
      *
      * @return Response
      */ 
-    public function authenticate()
+    /*public function authenticate()
     {
         if (Auth::attempt(['id' => $id, 'password' => $password]))
         {
             return redirect()->intended('dashboard');
         }
-    }
+    }*/
 
 	public function facebook_redirect(){
 		return Socialize::with('facebook')->redirect();
@@ -90,7 +90,6 @@ class AuthController extends Controller {
         		echo "Email already exists, Login Instead";
         		Auth::login($authUser, true);
         	}
-		    var_dump($e);die;
 		    $message = $e;
 		}
 

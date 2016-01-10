@@ -22,9 +22,15 @@
                         </ul>
                     </div>
                     <div class="col-md-6 pull-right">
+
                     	@if (count($errors) > 0)
                     		<script> 
-        						$(".error-box").text(errMessage).fadeIn(400).delay(3000).fadeOut(400);
+                                var errorText = ""
+                                @foreach ($errors->all() as $error)
+                                    errorText += '<li>{{ $error }}</li>';
+                                @endforeach
+                                $(".error-box").css({ "left": "20%", "top": "20%" })
+        						$(".error-box").html(errorText).fadeIn(400).delay(3000).fadeOut(400);
                     		</script>
 						@endif
 						<form class="form-horizontal sign-up" role="form" method="POST" action="{{ url('/auth/register') }}">

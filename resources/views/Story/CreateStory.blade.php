@@ -1,13 +1,17 @@
 @extends('layout')
 @section('css')
 	<link href="{{ asset('/css/dropzone.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/css/summernote.css') }}" rel="stylesheet">
+	<script src="{{ asset('/js/summernote.js') }}"></script>
 @endsection
 
 @section('content')
 	<div class="container mt100 pd50lr">
-		<input type="text" class="txtBoxStyle typing" placeholder="Title of the story" value="{{ $title }}"/> <br/><br/>
+		<input type="hidden" name="id" id="id" value="" />
+		<input type="text" class="txtBoxStyle typing" id="title" placeholder="Title of the story" value="{{ $title }}"/> <br/><br/>
 		<h class="heading">Story Overview  </h><a class="fa fa-info-circle greyText" title="1. Use hashtags to make your story stand out 2. Easy drag and drop images to the description."></a>
-		<textarea placeholder="We are excited to know your story, so as the people out there"></textarea><br/><br/>
+		<textarea id="description" placeholder="We are excited to know your story, so as the people out there"></textarea><br/><br/>
+		<div id="summernote" class="grey">asdasdasd</div>
 		<h class="heading">Upload your images</h>
 		<form action="/dyUploader" method="post" enctype="multipart/form-data"
 	        class="dropzone dyBackGround"
@@ -17,7 +21,7 @@
 			    <input name="file" type="file" multiple />
 			</div>
 	    </form>
-	    <input type="text" class="txtBoxStyle typing mt50" placeholder="Tag friends, places, events" /> <br/><br/>
+	    <input type="text" id="tags" class="txtBoxStyle typing mt50" placeholder="Tag friends, places, events" /> <br/><br/>
 	    <input type="button" id="prevStory" value="Preview story" class="previewButton">
 	    <input type="button" id="createStory" value="Create story" class="storyButton">
 	</div>
@@ -27,6 +31,7 @@
 @section('headScript')
     <script src="{{ asset('/js/tinymce/tinymce.min.js') }}"></script>
     <script src="{{ asset('/js/dropzone.js') }}"></script>
+    <script src="{{ asset('/js/story.js') }}"></script>
     <script>
     tinymce.init({
 	  selector: 'textarea',
@@ -52,21 +57,35 @@
     //tinymce.init({ selector:'textarea' });
     </script>
     <script>
-
-
-	Dropzone.options.myAwesomeDropzone = {
-	  headers: image-dy,
-	  uploadMultiple: true,
-	  maxFilesize: 3, // MB
-	  accept: function(file, done) {
-	    if (file.name == "justinbieber.jpg") {
-	      done("Naha, you don't.");
-	    }
-	    else { done(); }
-	  },
-	  addRemoveLinks: "dictRemoveFile, dictCancelUpload",
-	  acceptedFiles: "image/*",
-	  dictDefaultMessage: "Upload your memories"
-	};
+		Dropzone.options.myAwesomeDropzone = {
+		  //headers: image-dy,
+		  uploadMultiple: true,
+		  maxFilesize: 3, // MB
+		  accept: function(file, done) {
+		    if (file.name == "justinbieber.jpg") {
+		      done("Naha, you don't.");
+		    }
+		    else { done(); }
+		  },
+		  addRemoveLinks: true,
+		  removedfile: function(file) {
+		    var name = file.name;        
+		    $.ajax({
+		        type: 'POST',
+		        url: '/deleteImage',
+		        data: "id="+name,
+		        dataType: 'html'
+		    });
+			var _ref;
+			return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;        
+		  },
+		  acceptedFiles: "image/*",
+		  dictDefaultMessage: "Upload your memories"
+		};
+	</script>
+	<script>
+		$(document).ready(function(){
+			$('#summernote').summernote();
+		})
 	</script>
 @endsection

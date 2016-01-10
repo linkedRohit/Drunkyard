@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Eloquent\Model;
 use \stdClass;
+use Auth;
+use Entities\Story;
 
 /**
 * Our story repository, containing commonly used queries
@@ -18,7 +20,7 @@ class StoryRepository implements StoryInterface
     * @param Model $story
     * @return StoryRepository
     */
-    public function __construct(Model $story)
+    public function __construct(Story $story)
     {
         $this->storyModel = $story;
     }
@@ -52,5 +54,41 @@ class StoryRepository implements StoryInterface
         $object->name = $story->name;
         
         return $object;
+    }
+
+    /**
+    * Returns the story object associated with the passed id
+    * 
+    * @param mixed $story
+    * @return Model
+    */
+    public function saveStory($story)
+    {
+        $story['status'] = 'DRAFT';
+        $story['visible'] = 0;
+        $story['author'] = Auth::user()->id;
+        $story['genre'] = '';
+
+        $storyObject = json_decode(json_encode($story));
+        foreach ($storyObject as $key => $value) 
+            $this->storyModel->{$key} = $value;
+
+        if(empty($story['id'])) {
+            $oldStory = $this->storyModel->find($story['id']);
+            $status = $this->storyModel->save();
+            if($status) {
+                return $this->storyModel->id;
+            }
+        } else {
+            $oldStory = $this->storyModel->find($story['id']);
+            $oldStory->title = $story['title'];
+            $oldStory->description = $story['description'];
+            $oldStory->tags = $story['tags'];
+            $status = $oldStory->save();
+            if($status) {
+                return $this->storyModel->id;
+            }
+        }
+        return $status;
     }
 }

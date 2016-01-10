@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <title>Drunken Diaries</title>
 
@@ -17,7 +18,8 @@
     <link href="{{ asset('/css/diaries.css') }}" rel="stylesheet" type="text/css">
     <!-- Custom Fonts -->
     <link href="{{ asset('/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="" rel="stylesheet" >
+    <!--<link href="{{ asset('/css/angular-material.min') }}" rel="stylesheet" >-->
+    <script src="{{ asset('/js/jquery.js') }}"></script>
 
     @yield('css')
     @yield('headScript')
@@ -35,7 +37,7 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <div class='error-box' style='display:none'></div>
+    <div class='error-box' style='display:none' id="errorBox"></div>
 
    
     <div class="drunkyard-navigation">
@@ -137,14 +139,14 @@
             <p>Copyright &copy; DrunkenDiaries.com 2015</p>
         </div>
         <div class="lbbordr2px mt50">
-                                    <a href="" class="footerAnchor">About us</a>
-                                    <a href="" class="footerAnchor">FAQs</a>
-                                    <a href="" class="footerAnchor">Contact us</a>
-                                    <a href="" class="footerAnchor">Feedback</a>
-                                    <a href="" class="footerAnchor">Careers </a>
-                                    <a href="" class="footerAnchor">Privacy </a>
-                                    <a href="" class="footerAnchor">Terms </a>
-                                </div>
+            <a href="" class="footerAnchor">About us</a>
+            <a href="" class="footerAnchor">FAQs</a>
+            <a href="" class="footerAnchor">Contact us</a>
+            <a href="" class="footerAnchor">Feedback</a>
+            <a href="" class="footerAnchor">Careers </a>
+            <a href="" class="footerAnchor">Privacy </a>
+            <a href="" class="footerAnchor">Terms </a>
+        </div>
     </section>
     </footer>
 
@@ -162,7 +164,11 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ asset('/js/diaries.js') }}"></script>
     <script src="{{ asset('/js/main.js') }}"></script>
-
+    <!--<script src="{{ asset('/js/angular.min.js') }}"></script>
+    <script src="{{ asset('/js/angular-animate.min.js') }}"></script>
+    <script src="{{ asset('/js/angular-aria.min.js') }}"></script>
+    <script src="{{ asset('/js/angular-material.min.js') }}"></script>
+    <script src="{{ asset('/js/angular-messages.min.js') }}"></script>-->
 
 </body>
 

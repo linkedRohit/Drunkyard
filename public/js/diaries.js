@@ -192,7 +192,7 @@ $(window).scroll(function() {
     } else {
         $("#leftPane").removeClass("fixAndBorder");
     }
-    if($('#footer').visible()) {
+    if($('#footer') && $('#footer').visible()) {
         $("#leftPane").removeClass("fixAndBorder");
     }
 });

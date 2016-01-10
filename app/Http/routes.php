@@ -37,7 +37,8 @@ Route::get('medium_callback', 'Auth\AuthController@medium');
 Route::post('/dyUploader', 'HomeController@uploadFile');
 
 
-Route::get('/create', 'StoryController@createStory');
-Route::get('/feed', 'StoryController@getStories');
+Route::get('create', 'StoryController@createStory');
+Route::get('feed', 'StoryController@getStories');
+Route::post('save', 'StoryController@saveDraft');
 
 Route::get('/', 'WelcomeController@index');

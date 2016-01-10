@@ -2,6 +2,7 @@
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
+use Config;
 
 class APIAuthenticate {
 
@@ -10,17 +11,17 @@ class APIAuthenticate {
 	 *
 	 * @var Guard
 	 */
-	protected $auth;
+	protected $apiauth;
 
 	/**
 	 * Create a new filter instance.
 	 *
-	 * @param  Guard  $auth
+	 * @param  Guard  $apiauth
 	 * @return void
 	 */
-	public function __construct(Guard $auth)
+	public function __construct(Guard $apiauth)
 	{
-		$this->auth = $auth;
+		$this->apiauth = $apiauth;
 	}
 
 	/**
@@ -33,8 +34,7 @@ class APIAuthenticate {
 
 	public function handle($request, Closure $next)
 	{
-		var_dump($request);die;
-		if($request->getallheaders("API_KEY") == $_API_KEY)
+		if(Config::get('app.key') == Config::get('constants.API_KEY'))
 			return response('Unauthorized.', 401);
 		else
 			return $next($request);

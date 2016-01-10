@@ -53,7 +53,7 @@
                         <a href="#page-top"></a>
                     </li>
         		    <li>
-        			    <a href="/auth/login" id="logInId" class="btn btn-lg btn-site radius pd12ud"><span class="network-name pd25lr">Sign in</span></a>
+        			    <a href="/auth/login" id="logInId" class="btn btn-lg radius pd12ud"><span class="network-name pd25lr">Sign in</span></a>
                     </li>
                 </ul>
             </div>
@@ -70,8 +70,8 @@
                     <div class="col-md-6 col-md-offset-6">                        
                         <p class="text-heading txtShadow">All party plans, at one place</p>
                         <p class="intro-text text text-default txtShadow">Experience itinerary for every party. Sign up for DrunkYard today.</p>
-                        <a href="/auth/register" id="signUpId" class="btn btn-success btn-lg radius pd12ud mr10"><span class="light network-name pd25lr">Sign Up — It's Free</span></a>
-                        <a href="/video" id="signUpId" class="btn btn-site btn-lg radius pd12ud "><span class="light network-name pd25lr">Watch Trailer</span></a>
+                        <a href="/auth/register" id="signUpId" class="col-md-6 col-xs-12 btn btn-success btn-lg radius pd12ud mr10"><span class="light network-name pd25lr">Sign Up — It's Free</span></a>
+                        <a href="/video" id="signUpId" class="col-md-6 col-xs-12 btn btn-lg radius pd12ud "><span class="light network-name pd25lr">Watch Trailer</span></a>
                     </div>
                 </div>
             </div>
@@ -161,7 +161,7 @@
         <div class="container text-center greyText mt50">
             <p><a href="mailto:feedback@startbootstrap.com" class="label label-default">feedback@drunkdiaries.com</a>
                 </p> <br/>
-            <p>Copyright &copy; DrunkenDiaries.com 2015</p>
+            <p>Copyright &copy; Drunkyard.in 2016</p>
         </div>
     </section>
     </footer>

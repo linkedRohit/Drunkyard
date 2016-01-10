@@ -27,6 +27,26 @@ class StoryService
     * @param mixed $story
     * @return string
     */
+    public function saveStory($story)
+    {
+        // If story variable is numeric, assume ID
+        if (is_array($story))
+        {
+            // Get story based on ID
+            $storyStatus = $this->storyRepo->saveStory($story);
+            return $storyStatus;
+        }
+
+        // If nothing found, return false
+        return false;
+    }
+
+    /**
+    * Method to get story based either on name or ID
+    * 
+    * @param mixed $story
+    * @return string
+    */
     public function getStory($story)
     {
         // If story variable is numeric, assume ID
@@ -44,5 +64,9 @@ class StoryService
 
         // If nothing found, return this simple string
         return 'Story Not Found';
+    }
+
+    public function parseDescriptionForImages($description) {
+        
     }
 }

@@ -7,4 +7,5 @@
 interface StoryInterface
 {
     public function getStoryById($storyId);
+    public function saveStory($story);
 }

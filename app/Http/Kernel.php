@@ -16,6 +16,7 @@ class Kernel extends HttpKernel {
 		'Illuminate\Session\Middleware\StartSession',
 		'Illuminate\View\Middleware\ShareErrorsFromSession',
 		'drunkyard\Http\Middleware\VerifyCsrfToken',
+		'drunkyard\Http\Middleware\APIAuthenticate',
 	];
 
 	/**
@@ -27,6 +28,7 @@ class Kernel extends HttpKernel {
 		'auth' => 'drunkyard\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
 		'guest' => 'drunkyard\Http\Middleware\RedirectIfAuthenticated',
+		'apiauth' => 'drunkyard\Http\Middleware\APIAuthenticate',
 	];
 
 }
