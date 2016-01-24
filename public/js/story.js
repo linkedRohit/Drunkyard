@@ -8,7 +8,7 @@ $(document).ready(function(){
 		{ 
 			var newObject = {};
 			var title=$('#title').val();
-			var description=$('#description_ifr').contents().find('body').html()
+			var description=$('.note-editable').html()
 			var tags=$('#tags').val();
 			var id = $('#id').val();
 			newObject.title=title;
@@ -46,4 +46,6 @@ $(document).ready(function(){
 	       		
 	    });
 	}
+
+	
 })

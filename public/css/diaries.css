@@ -8,7 +8,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
-    color: #fff;
+    
 }
 
 html {
@@ -553,11 +553,15 @@ ul.li{
     }
 }
 
+.fr{
+    float:right;
+}
+.fl{
+    float:left;
+}
 .error-box {
     right: 5%;
-    background-color: rgb(136, 228, 136);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
-    font-weight: 700;
     width:300px;
     position: fixed;
     padding:10px;
@@ -574,6 +578,9 @@ ul.li{
 .pt100{
     padding-top: 100%;
 }
+.pt50{
+    padding-top: 50px;
+}
 .rowHeight200{
     height:200px;
 }
@@ -589,7 +596,7 @@ ul.li{
     padding-right:0px;
 }
 .greyText{
-    color: #555;
+    color: #555 !important;
 }
 .mt-20{
     margin-top: -20px;
@@ -616,7 +623,7 @@ ul.li{
     background: transparent;
     border-bottom: 1px dashed    #7C46E6;
     color: #777;
-    font-size: 32px;
+    font-size: 40px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
 }
 ::-moz-selection { /* Code for Firefox */
@@ -629,12 +636,12 @@ ul.li{
 }
 .typing
 {
-    width: 60%;
     white-space:nowrap;
     overflow:hidden;
     -webkit-animation: type 2s steps(50, end);
     animation: type 2s steps(50, end)1;
     display: inline-block;
+    font-weight: 600;
 }
 
 @keyframes type{
@@ -660,7 +667,6 @@ div.mce-fullscreen {
 .previewButton, .storyButton{
     position: relative;
     vertical-align: top;
-    width: 20%;
     height: 54px;
     font-size: 22px;
     padding: 20;
@@ -669,8 +675,7 @@ div.mce-fullscreen {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     cursor: pointer;
-    float:right;
-    margin: 30px;
+    width:200px;
 }
 .storyButton{
     background: #7C46E6;
@@ -756,6 +761,7 @@ div.mce-fullscreen {
 }
 .image{
     border-radius: 23px;
+    border : 1px solid #777;
 }
 .image:hover{
     opacity: 0.3;
@@ -857,4 +863,38 @@ textarea, textarea:focus{
     left: 0px;
     position: fixed;
     z-index:1;
+}
+.editorStyle{
+    border-top: 1px dashed #A9A2A2;
+    border-bottom   : 1px dashed #A9A2A2;
+    border-radius: 5px;
+    padding: 23px;
+    height: 400px;
+    font-size: 23px;
+    overflow: overlay;
+}
+.loadingBar {
+    background-color: #00FF4E;
+    height: 5px;
+}
+.loading {
+    top: 0px; 
+    left:0px; 
+    height:2px; 
+    width:200px; 
+    background-color:#FFF; 
+    box-shadow: 0px 0px 8px 5px #8858E8
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #72F199;
+  outline: 1px solid #72F199;
 }

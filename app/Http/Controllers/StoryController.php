@@ -4,6 +4,7 @@ use Story;
 use Route;
 use Illuminate\Http\Request;
 use Response;
+use Auth;
 
 class StoryController extends Controller {
 
@@ -59,11 +60,34 @@ class StoryController extends Controller {
 		        } else {
 		        	return Response::json($status, 406);
 		        }
+			} else {
+				return Response::json('ok', 200);
 			}
 	    } catch(Exception $ex) {
 	    	Log::critical($ex->getMessage());
-	    	return Response::json("Unexpected went wrong", 406);
+	    	return Response::json("Unexpected went wrong", 500);
 	    }
+	}
+
+	public function myYard() {
+		$dataBag = array();
+		return view('Story/yard', $dataBag);
+	}
+
+	public function Yard(){
+			$dataBag['message'] = 'You have not posted any stories.';
+			return Response::json( json_encode($dataBag),200);
+		$user = Auth::user();
+		$drafts = Story::getStoriesByUser($user->id, 'DRAFT');
+		$stories = Story::getStoriesByUser($user->id, 'STORY');
+		if($stories || $drafts) {
+			$dataBag['DRAFT'] = $drafts;
+			$dataBag['STORY'] = $stories;
+			return Response::json( json_encode($dataBag),200);
+		} else {
+			$dataBag['Message'] = 'You are very new to us, Not even a single story belongs to you.';
+			return Response::json( json_encode($dataBag),200);
+		}
 	}
 
 }

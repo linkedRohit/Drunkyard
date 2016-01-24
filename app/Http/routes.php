@@ -40,5 +40,7 @@ Route::post('/dyUploader', 'HomeController@uploadFile');
 Route::get('create', 'StoryController@createStory');
 Route::get('feed', 'StoryController@getStories');
 Route::post('save', 'StoryController@saveDraft');
+Route::get('yard', 'StoryController@myYard');
+Route::get('myYard', 'StoryController@Yard');
 
 Route::get('/', 'WelcomeController@index');

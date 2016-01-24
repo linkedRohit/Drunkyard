@@ -72,12 +72,22 @@ class StoryRepository implements StoryInterface
         $storyObject = json_decode(json_encode($story));
         foreach ($storyObject as $key => $value) 
             $this->storyModel->{$key} = $value;
-
+        
         if(empty($story['id'])) {
-            $oldStory = $this->storyModel->find($story['id']);
-            $status = $this->storyModel->save();
-            if($status) {
-                return $this->storyModel->id;
+            $oldStory = $this->storyModel->whereTitle($story['title'])->get();
+            if($oldStory) {
+                $oldStory->title = $story['title'];
+                $oldStory->description = $story['description'];
+                $oldStory->tags = $story['tags'];
+                $status = $oldStory->save();
+                if($status) {
+                    return $oldStory->id;
+                }
+            } else {
+                $status = $this->storyModel->save();
+                if($status) {
+                    return $this->storyModel->id;
+                }
             }
         } else {
             $oldStory = $this->storyModel->find($story['id']);
@@ -90,5 +100,10 @@ class StoryRepository implements StoryInterface
             }
         }
         return $status;
+    }
+
+    public function getStoriesByUser($userId, $storyType) {
+        $myStories = $this->storyModel->whereAuthorAndStatus($userId, $storyType)->get();
+        return $myStories;
     }
 }

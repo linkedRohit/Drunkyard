@@ -69,4 +69,8 @@ class StoryService
     public function parseDescriptionForImages($description) {
         
     }
+
+    public function getStoriesByUser($userId, $storyType) {
+        return $this->storyRepo->getStoriesByUser($userId, $storyType);
+    }
 }

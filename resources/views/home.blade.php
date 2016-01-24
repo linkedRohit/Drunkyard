@@ -158,8 +158,8 @@
                                             </div>
                                         </div>                            
                                     </div>
-                                    <h4 class="col-sm-12">Top Stories as per your interest
-                                    <a href="#"><span class="pull-right fa fa-close"></span></a></h4>
+                                    <h4 class="col-sm-12" id="topStoriesHead">Top Stories as per your interest
+                                    <a href="#" id="close"><span class="pull-right fa fa-close"></span></a></h4>
                                     <div class="TopStoryPanel">
                                         <div class="row">
                                         <div class="col-md-1 mt10">

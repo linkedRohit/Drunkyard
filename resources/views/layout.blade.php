@@ -81,7 +81,7 @@
                         </ul>
                     </li>-->
                     <li><a href="#"><span class="fa fa-calendar"></span> Hangout</a></li>                    
-                    <li><a href="#"><span class="fa fa-bank"></span> My yard</a></li> 
+                    <li><a href="/yard"><span class="fa fa-bank"></span> My yard</a></li> 
                     <!--<form role="search" class="navbar-form navbar-left hidden-xs">
                         <div class="form-group">
                             <input type="text" placeholder="Search" class="form-control">
@@ -94,7 +94,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!--<li><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/c0.0.160.160/p160x160/12189526_1251290068229909_3470597878457429434_n.jpg?oh=4278111dc837caae7c51a806c3eadd53&oe=571F0EBE&__gda__=1460609962_caad221000552dc45a80bafcc079b3c3" class="image_thumb" height="23px" width="23px"></li>                        -->
                     <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-xs"> Rohit <b class="caret"></b></a>
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-xs fa fa-glass"></a>
                         <ul class="dropdown-menu">
                             <li class="menuListItem"><a href="#"><span class="fa fa-gears"></span> My Profile</a></li>
                             <li class="menuListItem"><a href="#"><span class="fa fa-lock"></span> Change Password</a></li>
@@ -105,6 +105,7 @@
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
+        <div class="loading" id="loading"></div>
     </nav>
 </div>
 
@@ -164,11 +165,15 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ asset('/js/diaries.js') }}"></script>
     <script src="{{ asset('/js/main.js') }}"></script>
-    <!--<script src="{{ asset('/js/angular.min.js') }}"></script>
+    <script src="{{ asset('/js/angular.min.js') }}"></script>
     <script src="{{ asset('/js/angular-animate.min.js') }}"></script>
     <script src="{{ asset('/js/angular-aria.min.js') }}"></script>
     <script src="{{ asset('/js/angular-material.min.js') }}"></script>
-    <script src="{{ asset('/js/angular-messages.min.js') }}"></script>-->
+    <script src="{{ asset('/js/angular-messages.min.js') }}"></script>
+    <script src="{{ asset('/js/summernote.min.js') }}"></script>
+    <script src="{{ asset('/js/angular-summernote.js') }}"></script>
+    <script src="{{ asset('/js/SN_Angular.js') }}"></script>
+    <script src="{{ asset('/js/StoryController.js') }}"></script>
 
 </body>
 
