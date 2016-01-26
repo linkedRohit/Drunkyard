@@ -8,6 +8,7 @@ use Auth;
 
 class StoryController extends Controller {
 
+
 	/*
 	|--------------------------------------------------------------------------
 	| Story Controller
@@ -74,20 +75,22 @@ class StoryController extends Controller {
 		return view('Story/yard', $dataBag);
 	}
 
-	public function Yard(){
-			$dataBag['message'] = 'You have not posted any stories.';
-			return Response::json( json_encode($dataBag),200);
+
+	public function Yard($criteria = null, $orderType = null){
 		$user = Auth::user();
-		$drafts = Story::getStoriesByUser($user->id, 'DRAFT');
-		$stories = Story::getStoriesByUser($user->id, 'STORY');
-		if($stories || $drafts) {
-			$dataBag['DRAFT'] = $drafts;
-			$dataBag['STORY'] = $stories;
+		if(isset($criteria) && isset($orderType)){
+			$activity = Story::getStoriesByUserInOrder($user->id, $criteria, $orderType);
+		} else {
+			$activity = Story::getStoriesByUser($user->id);
+		}
+		if($activity) {
+			$dataBag['ACTIVITY'] = $activity;
 			return Response::json( json_encode($dataBag),200);
 		} else {
-			$dataBag['Message'] = 'You are very new to us, Not even a single story belongs to you.';
+			$dataBag['MESSAGE'] = 'You are very new to us, Share stories.';
 			return Response::json( json_encode($dataBag),200);
 		}
 	}
+
 
 }

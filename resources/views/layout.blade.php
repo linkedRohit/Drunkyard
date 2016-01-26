@@ -111,44 +111,44 @@
 
 	@yield('content')
 
-     <footer class="mt100" id="footer">
-    <!-- Contact Section -->
-    <section id="contact" class="container text-center greyText">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Follow us & other crazy people like <br/><br/><span class="label label-danger">you</span></h2>
-                <p>You can give feedback, follow us or follow other crazy people on our social networks.</p>
-                <br />
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/" class="btn btn-site btn-lg twt"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/Drunken-Diaries-1662222597400561" class="btn btn-site btn-lg fbk"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>                        
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/" class="btn btn-site btn-lg gog"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+    <footer id="footer">
+        <!-- Contact Section -->
+        <section id="contact" class="container text-center greyText">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Follow us & other crazy people like <br/><br/><span class="label label-danger">you</span></h2>
+                    <p>You can give feedback, follow us or follow other crazy people on our social networks.</p>
+                    <br />
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/" class="btn btn-site btn-lg twt"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Drunken-Diaries-1662222597400561" class="btn btn-site btn-lg fbk"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>                        
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" class="btn btn-site btn-lg gog"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
 
-        <div class="container text-center greyText">
-            <p><a href="mailto:feedback@startbootstrap.com" class="label label-default">feedback@drunkdiaries.com</a>
-                </p> <br/>
-            <p>Copyright &copy; DrunkenDiaries.com 2015</p>
-        </div>
-        <div class="lbbordr2px mt50">
-            <a href="" class="footerAnchor">About us</a>
-            <a href="" class="footerAnchor">FAQs</a>
-            <a href="" class="footerAnchor">Contact us</a>
-            <a href="" class="footerAnchor">Feedback</a>
-            <a href="" class="footerAnchor">Careers </a>
-            <a href="" class="footerAnchor">Privacy </a>
-            <a href="" class="footerAnchor">Terms </a>
-        </div>
-    </section>
+            <div class="container text-center greyText">
+                <p><a href="mailto:feedback@startbootstrap.com" class="label label-default">feedback@drunkdiaries.com</a>
+                    </p> <br/>
+                <p>Copyright &copy; DrunkenDiaries.com 2015</p>
+            </div>
+            <div class="lbbordr2px mt50">
+                <a href="" class="footerAnchor">About us</a>
+                <a href="" class="footerAnchor">FAQs</a>
+                <a href="" class="footerAnchor">Contact us</a>
+                <a href="" class="footerAnchor">Feedback</a>
+                <a href="" class="footerAnchor">Careers </a>
+                <a href="" class="footerAnchor">Privacy </a>
+                <a href="" class="footerAnchor">Terms </a>
+            </div>
+        </section>
     </footer>
 
 

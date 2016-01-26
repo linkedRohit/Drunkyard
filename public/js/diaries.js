@@ -229,7 +229,6 @@ $(document).ready(function()
     .ajaxStop(function() {
         $(this).hide();
     });
-
 });
 
 function loadProgress() {    
@@ -260,3 +259,46 @@ $("#close").bind( "click", function(){
     $("#topStoriesHead").hide();
     $(".TopStoryPanel").hide();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*$(document).ready(function(){
+            getPosts();
+        });
+        var flash = $("#errorBox"); 
+        function getPosts() {
+            $.ajax({
+               method: "GET",
+               url: "/myYard"
+            })
+            .done(function( result ) {
+                if(result) {
+                    if(JSON.parse(result)) {
+                        var obj = JSON.parse(result);
+                        if(obj.Message) {
+                            flash.text(obj.Message);
+                        } else {
+                            renderDiv(obj, 'draftId');
+                            renderDiv(obj, 'storyId');
+                        }
+                    }
+                }
+                    
+            });
+        }*/

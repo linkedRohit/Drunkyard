@@ -8,5 +8,5 @@ interface StoryInterface
 {
     public function getStoryById($storyId);
     public function saveStory($story);
-    public function getStoriesByUser($userId, $storyType);
+    public function getStoriesByUser($userId);
 }

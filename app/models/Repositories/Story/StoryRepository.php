@@ -74,21 +74,21 @@ class StoryRepository implements StoryInterface
             $this->storyModel->{$key} = $value;
         
         if(empty($story['id'])) {
-            $oldStory = $this->storyModel->whereTitle($story['title'])->get();
+            /*$oldStory = $this->storyModel->whereTitle($story['title'])->get();
             if($oldStory) {
                 $oldStory->title = $story['title'];
-                $oldStory->description = $story['description'];
+                $oldStory->description = htmlspecialchars($story['description']);
                 $oldStory->tags = $story['tags'];
                 $status = $oldStory->save();
                 if($status) {
                     return $oldStory->id;
                 }
-            } else {
+            } else {*/
                 $status = $this->storyModel->save();
                 if($status) {
                     return $this->storyModel->id;
                 }
-            }
+            //}
         } else {
             $oldStory = $this->storyModel->find($story['id']);
             $oldStory->title = $story['title'];
@@ -102,8 +102,13 @@ class StoryRepository implements StoryInterface
         return $status;
     }
 
-    public function getStoriesByUser($userId, $storyType) {
-        $myStories = $this->storyModel->whereAuthorAndStatus($userId, $storyType)->get();
+    public function getStoriesByUser($userId) {
+        $myStories = $this->storyModel->whereAuthor($userId)->orderBy('updated_at','DESC')->get();
+        return $myStories;
+    }
+
+    public function getStoriesByUserInOrder($userId, $orderCriteria, $orderType) {
+        $myStories = $this->storyModel->whereAuthor($userId)->orderBy($orderCriteria, $orderType)->get();
         return $myStories;
     }
 }

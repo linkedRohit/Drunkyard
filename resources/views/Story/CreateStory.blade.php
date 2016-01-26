@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-    <div ng-app="storyApp" ng-controller="storyCtrl">
+    <div ng-app="storyApp" ng-controller="storyCtrl" class="mb150">
 		<div class="container mt100 pd50lr">
 			<input type="hidden" name="id" id="id" value="" />
 			<input type="text" class="txtBoxStyle typing" id="title" placeholder="Title of the story" value="{{ $title }}"/> <br/><br/>

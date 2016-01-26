@@ -70,7 +70,7 @@ class StoryService
         
     }
 
-    public function getStoriesByUser($userId, $storyType) {
-        return $this->storyRepo->getStoriesByUser($userId, $storyType);
+    public function getStoriesByUser($userId) {
+        return $this->storyRepo->getStoriesByUser($userId);
     }
 }

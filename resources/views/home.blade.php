@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-            <div class="container greyText mt50">
+            <div class="container greyText mt50 mb150">
                 <div class="row">
                     <div class="col-md-4 visible-lg visible-md mt10" id="leftPane"> <!-- data-spy="affix" data-offset-top="1200"-->
                         <div class="featured">
